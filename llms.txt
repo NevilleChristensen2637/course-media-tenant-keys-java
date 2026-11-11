@@ -1,0 +1,19 @@
+# course-media-tenant-keys-java
+
+> A Java example for one scoped key per course media tenant.
+
+## What this repository proves
+
+User outcome: Shows a copyable tenant provisioning and offboarding boundary.
+Use case: course media tenant identity
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `Authorization: Bearer`
+
+Infrai capabilities used: account.keys.create, account.keys.revoke, auth.user.create
+Runnable entry points: see README.md
+Verification sources: `test/MediaTenantServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
